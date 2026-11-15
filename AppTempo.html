@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tempo Claro</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tempo Claro">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0c141b">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAP9UlEQVR42u1da5Bc1XHuPue+Z2Z3Z1eAHgiQDAb0AlFCoIcVhJBBCkayoQrLYDvYcRWhCgwqUnGqAk5RSiU/iFx5ObYLYXAqEalgE94II2QcCzmykCwUggEJOSxgCWl3Z+d17517z+n8mJUQBCnambl3Zlf91fm/s+f0/br7O919MLv4S8BgfBIEbwHjeDAAkHeBcRzjYNtgMHMwOOZgtNKtMHMwmDkYzBwMZg4GZysM1jkYzBwMZg4GMweDsxUG6xwMBjMH42SZA5k5GMwcDM5WGKxzMJg5GBxzMFjnYIw1t8JIA/VvUP4fpiYCrQEQiJg5Tj2bMARECiIFAFAsf3S3CYQFjklAYJsjhkLMHOMeUoAmiGIoVoWX0fksGQJuXulb5ghJaALHgm1vGL9807AseP+QRIM8m0wJmjqCSDhbaSFLjJCBFEAAhSo6Jk3p1auX+1fMql12XhRFOLlPg4APyUFQpSwKFazF8Oiv7JdeM7e9YQ1W0LXJMUFpIAJAaBeZYO7qW/lYWwjTgEIFJcBVs2t3rKzOmx5P6NJKYRAiIITRx7wKmBIMCUDgZXS1Kj4YFg//3Hlgi/PuIZnLaClA6fZZe+7qP+ITbY0qgEAAxYJYfkm49trqlbNrEsEPsRYDIggBQJ8c4NU9SKzBEGAZ4DrUf0j88CX3/qe8ko/5LMWqXcZxDRtHayIMv4aOSXeuqN61strt0VAZPzE9OTGIQGmwDMh26Rd22X/1WGbza1ZPVrclCsHcNbfx0TZvGZUQ8y59/xvDqxcHhUFBNGqz+JiJRAp6sxTGcNPfdz+5w3EdEgg6XfuQ9rmX8uk2tYMSCiVx7SXhs386OHtqXCgKKUBgswmwFFANEQC/tDiYMzX+8XZXE0oJQOmlEKxzNGsZfoCr5of/cnsBCSohmrJ1ZyOBCEpV/MLCQMrCLd/r0YAgjqQwaTDHefP5jBuMQAUENcy69Py3BiyJQYRStF5DEwilCl5yYc33xabtrpeh1JwLV4I1JWpkLHjgG4WsS37Yesv4SHo8KO9YUdn9jvncbse1KZ38lm9lG/2qDBguiNuvKa9e5FeDBC1j5F6GwLPgB39YyHlUi1KKBQQA8hrtkgJLFbFsbvjNFZXCoJQiDRfmB9Dl0Xf/oBArgZjGvyn4rBtYhACIf/z75W6PSKf0HUsJfohfmO9fMSus+Chl4v8m3600omoUK3jVnHDprHC4jFKm96eJQBHedXV58x6XSHPM0XGBaP02de01JWyL2lbFpTPDFXP9cpC4XbLOMerYMIphcp+eN60W1FCkvnmawLToigvDZ3Z6iDpR3mfmGPW3W62Kz13s93TpKG7DlyUF+L5YNdfvyupawj+AmWN02obSlMvSshmBitujECFCFOPEvFp8fvjcbjfjatLIzNER1hFr7MrQgnPDsB0+pY5YQyZDCz4VRgn/Bs5WRi2LGkL7kbBN3cZfQQoUCSERAAExoVIx1jlGsaSgaiBuWlid3BeHUdsuHqQgPxBfXlg5ozcO4wT1MGaO0SoNaBvU9jiNCGyDjtgF98p2iFtJveLmBDnth185xxwdZCCnxo/hbKURhbQTGo9GCIx1jk7KVoRnE2Cbe46IwLNISCTA5OyDmWN00ahl0da9TqkiTUntMhAisEzautcZrkhTciVYhxgHgG3Rtr1u0Rc9nm5XO4kmtCy1bZ9TqsgJPXGkkjpDZo5Rf7WuSTWFbVbxFUoElMkGP1wJNopFhLYJ7w5a//5KJuMppbEt1mkauliVG7fnPJuUFlwJ1jE1YICmSS++4ZV9IQW1xafYFr281zlYNEyTCLgSrGNQr/TZutc9XDRO74qj1O9micA0aMtvvLIv+7rjWLHO0UkxqWnoki9/tK3LtXXKnoUIbFP3HzZ/sjObzWilEVjn6DDyQNuGB/6j55ZFw3lPKZ0eeSiNOU89uKl3/yG7r+sIbbDO0VEJi2Pq/gHzoa3d2ayK08pcNIFt6sMlY8MverJuGqTFzNHQF0zYndXrf9q36Dx/yaerxao0JKXiU+iWhyYeLJoZV+mEfQozR+PnJAWVQvEXT0+oKTSSV0tjhfmsevLXucd25jxH61RiHdY5GlqISouejN7yRvYrG6Z4jk70Hj9W2OWpLa9nbt4wJePS0d/AHW8duY7Uk+az6vHduSd25fJdKoyREqkYRdOgWOO6ZyZEGg1xRNsA7njreNkjY9NXfnimlO+uunR4uGBogBYW/cYae1xV03jj96f+7I1cPhvHKr1IQDqzljATNEMhQoAifGpPLgjEZdN8x6JaLJq3DyLQhL2Z+MU3s7f98+Tn/zuTz6m4HoSmtZg5WtGCZgAB/vmPJ+1+1/3eTe/lPVUJGx8LRgRKo21q29Q/2dX15QenhgrzGZUmZxxhjplL+ICh2U4BQIRsRr32vvPQy/npp9UunurbBoQx1iWyk5ELCEBr0Bptk7pcNViVX/+nM9c9fbpjkWfrOPnE9RP+s+4b7+HzbWHTQBgJpWDp+ZXbrzy87IKyZVI1EJHCWCEi1Eu3PjQHHOEJgWBKci0tTd1/yHpwW++Grb2/Gzayjj46qLQNZs/G0fJ2RQQoBkIArJhVWvLpyurZxUk9kecq0FgNPrzJRQBN6JpaWhoUDlSNbfu8n7+ZeXRX9/7DVsbRtiTV1mpE7PnivXyiSVAIERYDESuckIkXnVuZP80nDTfPH7IM0jRiGY6lt+3z/nO/hwI27ug5MGxWfJnzYtsgRdj22fhsHMl2xCNQTaEfiagmQNDknujYREYIGqoYpaoEQRlbW5IMSbHGDnl7hbMVSPISFQBQIuQcLV1NBKVAHjsAnQAMQad1x/WRPUQYKeTXIeGUKgEhwrq+bkj4WNMLAURHL0qQX4c8tQ0F+I23Yx+nQUQp2AShOamN9NFIhMbL7HMhMYrVUDnkA25GSzctI+vYAEBEKQ7GTxglP5yUz9224nLLkER8zo1whmcZ2996d9Out0xDmkZ6rXYJMocUWIvU5+ZduP5rKyf2ZAWKseZzOyVMQcBaHD++/fW7H342iGLElHJdI7FZ7vLQYOlPrv+9dTctHyr7h4tVPuZm7EMirpp/4dzpk5d9e0PJD81UaDiRbEVKLJT9Ky8+d+2qxQOlqtZkSK5HbBaFSnDWhO77v7ria//wmGliCpFpApVgAjSRY5lrr1uUc6xYacGpSmve5hFFP1w1/8Kr555XCWpSJF7b0foaUgSMFOVz3pyzJ5aCmhTMGa0LTjVZhrz03DNrNYWYeP1vAgopAiJoojBWrmVqDkJbjTCK4ShtjEGFFDWBUprtIonMNlbHVguOqb4VArBN48BQaeMv9vRl3Voc84m2zqcYBwrljVv3ZD1bJf+kRiI6hyLqyjh/88wvF5w/9bNzPtU/ULQM2cY32WHsFxDFShtS5LP2rd958neFcta1taYU3EpCDWGy7If3/usWAFg+Z/pg2ecbvsbn+BD1Zt1SUPuzjS8+v3ufZ1s6FY+N+a/+ZUK6jSGw5IeuZX5z5eVrFs1KU/eFcXWvQo5pvPrOwfVPbdu8++2+noxOK5ZLyjhgREEXSutCJZjcmxOIxOzRGA1LHCz5QRTnM26k1Dip51CaEHFCLlPyI444mpvmI23TiJRO8/tKvBKMAGLShkRmjWYiUiJSKV7Wp1oJxqTR9Pa14dNibZvBk30YzBwMZg7GmKoEYxMbf1F5c9nKkekDUogwVsAC6Imn20ohENXROxEaA26lOY1cotJ0uFydnM8JRCJiN3WcyyYxWP6oyonjlzlGbk+Cmmsa937+M2sWzjClIFbIP3GvNDmmfLX/0Ppntm/es39Cd2ZM1Lo0zhyGEKUgvOjs0++7/jPLZ00brPgce5z4ZnXpjLPnTZ+0/tnt3/3pzjFRcd0gcyCC0uSa5n03LPnsrHP6B0pW/UEpDjuOv2ODZd+QYt0NS946MPT0rn1Z19KdzR9GYx+CFGKg5N/z+YXLZ57TP1Cyjz41xsRxwvJxrWmoEqy/edkr+w8MVQLDEKShg0Ww+jyz0SxEDGM1KZ9ds2DGQCWwDMkHf7LbLbAWq4ld3poFM0pBJIVsYP9TW417PoEouXm+0a0z2vLMUwqvQyICoJBSOIbUnUyLHQzHNADqLIzj626FwJRioBy82n8o51hKs32MzrNESv9q/wHbNDq8brKRrikCFIhhpNc/u6McRPU4i08dTur9A93lWo/v3Pvcnt/mHLs+NKxjV4M6hyLK55zNr/3PXz+3Y931i4cqQa1dT/COnSnHQmBPxu4fKN39yM9swyBIu7IrPYU0ivVp3Zl/3Lx778HC+jVXnNHt1d0nh6jHmbEBNaWe2Lnv7kdeCmMyx0RA2synoIgMKZ7a/fYrvz245vILuPkATjyd5+2Dm/bstww5Yhkd3+WFvbf+XQsirFgV/RoBd7Ud/1MisE2Zdaz6WC84Reo56rNZTst57FH+/4mAYypyb00lGAHEREwaJ6cRcQ0pA8ZDmSA7AwbPPmcwczCYORinAHMgAE8cHO2WaX3MnPyxO/v8BAIrIAjEKNaDVZ8FtNHoaWSbMmtbkLCg1r6ONwQAKIXxpG7vtqWzzZFnuBlwUkr8/g82vfaOJUWi+2a065+UiGGsrp199vobF5/R5SIKAOL4B06iBQYRako/8ev9d//by2GsMLGqbqMtlUimFAcK1W+tvOS+1ZcVquHhUsDFyaMSpIUQ1100be5Zpy1b/3gliBK64zXawhlDlfCqmVPvWn7RYDnQxGPzG0HBD6fms/ffsPDrD2+xkrkPF+nXF2lCxzTuuuqirGPGWgvun2y0qawY1K67eNrVM88qBbFMYBS6SNk2ECEinc85c6b0loOIk9gmg1NTiHnnnB4qhQk8otAGnQMBtIZQaccyNKcoTSOMFWIio9BFezQcIB6b38o5+dgxHW/NLEK0DePAsL9xx75ez+ay5GbMwpLyg6L/yI63c46t6jluh3S8QeOTa3W3a/3tlv/a/Pp7Z/ZkwljV64R4neQCgFiTQMx71tpHtx0oVhNLZVNPFurP2ZXC6NtP7yCE5RdMGazyq7OjmuYAec8qh7V7ntzxwm/e92xTJ1Njhn13bmhLqb4hsBRErmncsXTWFy+dbkpJxArpyXgTsE25573B72x+9YXX3zs956rEgnrsu/PBttg/ERgClaaCX5vc7QmB3NZw8s8NDFaCIFJ5z450gu+kta2eAxEUESJMyNqlMOIjH+3sOduUUb1LGcdpPQcBxBoMIfjCfrS8e6TPFsZ5JRjxVKCOHPvKNaQM7lth8OxzBjMHo1NngjGYORgcc3C2wuCONwYzB4NjDgbrHAxmDgYzB4OZg8HZCoN1DgYzB4PBzMFg5mBwtsJgnYPBzMHgSjAGMweDsxUG6xwMZg4Gg2MOBuscDGYOBjMHg5mDwdkKg3UOBjMHg5mDwczB4GyFt4DBOgeDmYPROvwvn84al1kR+94AAAAASUVORK5CYII=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* layout: uma coluna de cartões; resumo em frases no topo, depois abas de dia e uma linha por hora */
+:root{
+  --bg:#eef2f4; --card:#ffffff; --ink:#12202b; --muted:#566673; --line:#d5dde3; --accent:#0b6e8a; --soft:#e3eaee;
+  --ok:#1f8a4c; --warn:#b26a00; --bad:#c23b2e;
+  --w0:#dce7ef; --w1:#a4d4f4; --w2:#86dc90; --w3:#f1dc55; --w4:#f5a340; --w5:#ee6654; --wink:#10202b;
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Instrument Sans",-apple-system,"Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c141b; --card:#15212b; --ink:#e8eef2; --muted:#94a5b2; --line:#263744; --accent:#62cbe2; --soft:#1c2b37;
+    --ok:#5fd08a; --warn:#f0b454; --bad:#ff8a7a; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0c141b; --card:#15212b; --ink:#e8eef2; --muted:#94a5b2; --line:#263744; --accent:#62cbe2; --soft:#1c2b37;
+  --ok:#5fd08a; --warn:#f0b454; --bad:#ff8a7a; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 var(--body);
+  padding:calc(env(safe-area-inset-top) + 10px) calc(env(safe-area-inset-right) + 16px) calc(env(safe-area-inset-bottom) + 28px) calc(env(safe-area-inset-left) + 16px)}
+main{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2{font-family:var(--display);margin:0;text-wrap:balance}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+
+header{display:flex;align-items:center;gap:8px}
+#locbtn{flex:1;min-width:0;text-align:left;display:flex;flex-direction:column}
+#locname{font:700 24px/1.15 var(--display);overflow-wrap:anywhere}
+#locsub{font-size:13px;color:var(--muted)}
+.ib{width:42px;height:42px;border-radius:12px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;flex:none}
+.ib svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ib.on svg{fill:var(--w3);stroke:var(--warn)}
+
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:7px 12px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:14px;white-space:nowrap}
+.chip.sel{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+#search{display:none;flex-direction:column;gap:10px}
+#search.open{display:flex}
+#q{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.res{display:flex;flex-direction:column}
+.res button{text-align:left;padding:11px 2px;border-bottom:1px solid var(--line)}
+.res button:last-child{border-bottom:0}
+.act{color:var(--accent);font-weight:600;text-align:left;padding:6px 0}
+
+#sum p{margin:0 0 8px;font-size:18px;line-height:1.4}
+#sum p:last-of-type{margin-bottom:0}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:8px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;font-size:13px;font-weight:600;background:var(--soft)}
+.pill i{width:8px;height:8px;border-radius:50%;background:currentColor}
+.c0{color:var(--ok)} .c1{color:var(--warn)} .c2{color:var(--bad)}
+details>summary{cursor:pointer;list-style:none}
+details>summary::-webkit-details-marker{display:none}
+.more{color:var(--accent);font-size:13px;font-weight:600;margin-top:10px}
+.mtab{display:grid;grid-template-columns:auto 1fr 1fr;gap:4px 14px;font-size:14px;margin-top:8px}
+.mtab b{font-weight:600}
+
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;padding:9px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-weight:600;font-size:14px}
+.tab.sel{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:15px}
+.kv dt{color:var(--muted)} .kv dd{margin:0}
+
+.hours{display:flex;flex-direction:column;gap:8px}
+.hr{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.hr.night{background:transparent}
+.hr.now{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.hr summary{display:grid;grid-template-columns:44px 1fr auto;gap:4px 10px;padding:12px;align-items:center}
+.hh{font:700 18px var(--display)}
+.hh small{display:block;font:500 11px var(--body);color:var(--accent)}
+.wline{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wchip{display:inline-flex;align-items:baseline;gap:6px;padding:4px 9px;border-radius:9px;color:var(--wink);font-weight:600}
+.wchip b{font-size:18px} .wchip span{font-size:12px;font-weight:500}
+.arrow{width:22px;height:22px;flex:none}
+.arrow path{fill:var(--ink)}
+.tt{font:700 20px var(--display);text-align:right}
+.l2{grid-column:2/4;font-size:14px;color:var(--muted)}
+.l2 b{color:var(--ink);font-weight:600}
+.bd{grid-column:2/4;display:flex;gap:6px;flex-wrap:wrap}
+.b{font-size:12px;font-weight:600;padding:3px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.b.g{border-color:transparent;background:var(--w3);color:var(--wink)}
+.det{padding:0 12px 14px 12px;font-size:14px;display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:12px}
+.det p{margin:0}
+.w0{background:var(--w0)} .w1{background:var(--w1)} .w2{background:var(--w2)} .w3{background:var(--w3)} .w4{background:var(--w4)} .w5{background:var(--w5)}
+.legend{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;margin:10px 0 6px}
+.legend div{border-radius:7px;padding:6px 2px;text-align:center;font-size:11px;color:var(--wink);font-weight:600;line-height:1.25}
+.legend small{display:block;font-weight:500}
+dl.glos{margin:0;display:flex;flex-direction:column;gap:10px;font-size:15px}
+dl.glos dt{font-weight:600} dl.glos dd{margin:0;color:var(--muted)}
+#state{text-align:center;padding:36px 16px;color:var(--muted)}
+footer{font-size:12px;color:var(--muted);text-align:center}
+footer a{color:inherit}
+@media (prefers-reduced-motion:no-preference){.hr,.tab,.chip{transition:background .15s,border-color .15s}}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <button id="locbtn" aria-label="Trocar de local"><span id="locname">Tempo Claro</span><span id="locsub">toque pra pesquisar um local</span></button>
+    <button class="ib" id="fav" aria-label="Salvar nos favoritos"><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9 6.800 19.6l1-5.800L3.500 9.7l5.900-.8z"/></svg></button>
+    <button class="ib" id="theme" aria-label="Alternar tema claro e escuro"><svg viewBox="0 0 24 24"><path d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500z"/></svg></button>
+  </header>
+
+  <section class="card" id="search">
+    <label class="eyebrow" for="q" style="margin:0">Pesquisar cidade, praia ou bairro</label>
+    <input id="q" type="search" placeholder="Ex.: Campeche, Joaquina, Garopaba" autocomplete="off" enterkeyhint="search">
+    <button class="act" id="geo">Usar minha localização</button>
+    <div class="res" id="res"></div>
+  </section>
+
+  <div class="chips" id="favs"></div>
+  <div id="state">Carregando previsão…</div>
+  <div id="app" hidden style="display:none;flex-direction:column;gap:14px">
+    <section class="card" id="sum"></section>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <section class="card" id="day"></section>
+    <div class="hours" id="hours"></div>
+    <section class="card">
+      <h2 style="font-size:18px">Cores do vento</h2>
+      <div class="legend">
+        <div class="w0">Calmo<small>até 9 km/h</small></div><div class="w1">Fraco<small>9–19</small></div><div class="w2">Moderado<small>19–28</small></div>
+        <div class="w3">Forte<small>28–39</small></div><div class="w4">Muito forte<small>39–52</small></div><div class="w5">Temporal<small>52+</small></div>
+      </div>
+      <p class="small muted" style="margin:0">Em nós: 5, 10, 15, 21 e 28. A seta aponta pra onde o vento vai; o texto diz de onde ele vem.</p>
+    </section>
+    <section class="card">
+      <details><summary><h2 style="font-size:18px">Glossário <span class="more" style="margin:0">abrir</span></h2></summary>
+      <dl class="glos" style="margin-top:12px">
+        <div><dt>Nó</dt><dd>Unidade de velocidade usada no mar e na aviação. 1 nó = 1,85 km/h. 10 nós são uns 19 km/h.</dd></div>
+        <div><dt>Rajada</dt><dd>Sopro mais forte e curto, acima do vento médio. É a rajada que derruba drone e balança tripé.</dd></div>
+        <div><dt>Direção do vento</dt><dd>Sempre de onde o vento vem. Vento nordeste sai do nordeste e sopra pro sudoeste.</dd></div>
+        <div><dt>Período</dt><dd>Segundos entre uma onda e a próxima. Período longo (9 s ou mais) dá ondas mais fortes e arrumadas. Período curto é mar picado.</dd></div>
+        <div><dt>Swell</dt><dd>Ondulação que viajou de longe, criada por uma tempestade distante. Chega organizada. Já as ondas de vento nascem do vento local e são bagunçadas.</dd></div>
+        <div><dt>Terral</dt><dd>Vento que sopra da terra pro mar. Alisa as ondas e é o melhor pro surf. Aqui ele é estimado quando o vento vem do lado oposto ao das ondas.</dd></div>
+        <div><dt>Modelos</dt><dd>Programas de computador que calculam a previsão. O app compara GFS (EUA), ICON (Alemanha), ECMWF (Europa), GEM (Canadá) e Météo-France. Os números mostrados são o valor do meio entre eles. Quando eles discordam, a previsão é menos certa.</dd></div>
+        <div><dt>Golden hour</dt><dd>Primeira hora depois do nascer do sol e última antes do pôr. Luz baixa, quente e suave.</dd></div>
+        <div><dt>Luz dura e luz suave</dt><dd>Céu limpo dá sol direto e sombra marcada (luz dura). Céu encoberto espalha a luz e apaga as sombras (luz suave).</dd></div>
+        <div><dt>Maré</dt><dd>Sobe e desce do nível do mar. Aqui é uma estimativa de modelo global, não a tábua oficial da Marinha. Pode errar perto da costa.</dd></div>
+      </dl></details>
+    </section>
+  </div>
+  <footer>Dados: <a href="https://open-meteo.com/">Open-Meteo</a> (CC BY 4.0). <span id="upd"></span></footer>
+</main>
+
+<script>
+"use strict";
+/* ---------- utilidades ---------- */
+const MODELS=[['gfs_seamless','GFS'],['icon_seamless','ICON'],['ecmwf_ifs025','ECMWF'],['gem_seamless','GEM'],['meteofrance_seamless','Météo-France']];
+const HV='temperature_2m,relative_humidity_2m,precipitation,cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,wind_speed_10m,wind_gusts_10m,wind_direction_10m';
+const MV='wave_height,wave_direction,wave_period,swell_wave_height,swell_wave_direction,swell_wave_period,wind_wave_height,sea_level_height_msl,sea_surface_temperature';
+const DEF={name:'Florianópolis',sub:'Santa Catarina, Brasil',lat:-27.5954,lon:-48.548};
+const KMH=1.852;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nf=(v,d=0)=>Number(v).toLocaleString('pt-BR',{minimumFractionDigits:d,maximumFractionDigits:d});
+const kmh=kn=>nf(kn*KMH), kn0=kn=>nf(kn);
+const sum=a=>a.reduce((x,y)=>x+y,0), avg=a=>a.length?sum(a)/a.length:0;
+const med=a=>{if(!a.length)return null;const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
+const circ=a=>{if(!a.length)return null;let x=0,y=0;a.forEach(d=>{x+=Math.cos(d*Math.PI/180);y+=Math.sin(d*Math.PI/180)});return(Math.atan2(y,x)*180/Math.PI+360)%360};
+const angd=(a,b)=>{const d=Math.abs(a-b)%360;return d>180?360-d:d};
+const DIRS=['norte','nordeste','leste','sudeste','sul','sudoeste','oeste','noroeste'];
+const dirName=d=>DIRS[Math.round(d/45)%8];
+const wLevel=k=>k<5?0:k<10?1:k<15?2:k<21?3:k<28?4:5;
+const wWord=k=>k<2?'sem vento':['vento muito fraco','vento fraco','vento moderado','vento forte','vento muito forte','temporal'][wLevel(k)];
+const rainWord=m=>m<0.1?'sem chuva':m<0.5?'garoa':m<2.5?'chuva fraca':m<6?'chuva':'pancada forte';
+const cloudWord=c=>c<25?'céu limpo':c<75?'parcialmente nublado':'encoberto';
+const seaWord=(h,p)=>{const s=h<0.4?'mar quase liso':h<1?'mar pequeno':h<1.6?'mar médio':h<2.5?'mar grande':'mar muito grande';
+  const o=h<0.4?'':p>=10?', ondulação bem organizada':p>=8?', ondulação organizada':p>=6?', um pouco mexido':', mexido e picado';return s+o};
+const mins=t=>+t.slice(11,13)*60+ +t.slice(14,16);
+const hm=m=>{m=Math.round(m);return String(Math.floor(m/60)%24).padStart(2,'0')+'h'+String(m%60).padStart(2,'0')};
+
+/* ---------- montar as horas a partir dos modelos ---------- */
+function build(models,marine){
+  const base=models[0].d, sun={};
+  for(const m of models){const dd=m.d.daily;if(dd&&dd.time)dd.time.forEach((d,i)=>{if(!sun[d]&&dd.sunrise&&dd.sunrise[i])sun[d]={sr:mins(dd.sunrise[i]),ss:mins(dd.sunset[i])}})}
+  models.forEach(m=>{m.ix={};m.d.hourly.time.forEach((t,i)=>m.ix[t]=i)});
+  const mx={};let mh=null;
+  if(marine&&marine.hourly&&marine.hourly.time){mh=marine.hourly;mh.time.forEach((t,i)=>mx[t]=i)}
+  const hours=base.hourly.time.map(t=>{
+    const g=k=>models.map(m=>{const j=m.ix[t],a=m.d.hourly[k];return j==null||!a?null:a[j]});
+    const ok=a=>a.filter(v=>v!=null);
+    const W=g('wind_speed_10m'),G=g('wind_gusts_10m'),R=g('precipitation');
+    const wind=med(ok(W));if(wind==null)return null;
+    const d=t.slice(0,10),hr=+t.slice(11,13),s=sun[d],hs=hr*60;
+    const h={t,d,hr,wind,gust:med(ok(G))??wind*1.5,dir:circ(ok(g('wind_direction_10m')))??0,
+      rain:med(ok(R))??0,rainMax:Math.max(0,...ok(R)),temp:med(ok(g('temperature_2m'))),hum:med(ok(g('relative_humidity_2m'))),
+      cloud:med(ok(g('cloud_cover')))??0,low:med(ok(g('cloud_cover_low'))),mid:med(ok(g('cloud_cover_mid'))),high:med(ok(g('cloud_cover_high'))),
+      per:models.map((m,i)=>({n:m.n,wind:W[i],rain:R[i]})).filter(p=>p.wind!=null),
+      day:s?hs+30>s.sr&&hs+30<s.ss:hr>=6&&hr<18,
+      golden:s?(hs+60>s.sr&&hs<s.sr+60)||(hs+60>s.ss-60&&hs<s.ss):false,sea:null};
+    if(h.gust<h.wind)h.gust=h.wind;
+    const j=mx[t];
+    if(mh&&j!=null&&mh.wave_height&&mh.wave_height[j]!=null){const v=k=>mh[k]?mh[k][j]:null;
+      h.sea={h:v('wave_height'),p:v('wave_period')??0,dir:v('wave_direction')??0,sh:v('swell_wave_height'),sp:v('swell_wave_period'),sdir:v('swell_wave_direction'),
+        wwh:v('wind_wave_height'),lvl:v('sea_level_height_msl'),sst:v('sea_surface_temperature'),trend:null};
+      const n=mh.sea_level_height_msl;if(n&&n[j]!=null&&n[j+1]!=null){const df=n[j+1]-n[j];h.sea.trend=df>0.02?'subindo':df<-0.02?'descendo':'parada'}}
+    return h}).filter(Boolean);
+  const tides=[];
+  if(mh&&mh.sea_level_height_msl){const L=mh.sea_level_height_msl,T=mh.time;
+    for(let i=1;i<L.length-1;i++){const a=L[i-1],b=L[i],c=L[i+1];if(a==null||b==null||c==null)continue;
+      const hi=b>a&&b>=c,lo=b<a&&b<=c;if(!hi&&!lo)continue;
+      const den=a-2*b+c,off=den?0.5*(a-c)/den:0;tides.push({d:T[i].slice(0,10),m:mins(T[i])+off*60,hi})}}
+  return{hours,sun,tides,dates:[...new Set(hours.map(h=>h.d))]};
+}
+
+/* ---------- selos ---------- */
+const offshore=h=>h.sea&&angd(h.dir,h.sea.dir)>120;
+function badges(h){const dry=h.rain<0.1,b=[];
+  if(h.day&&dry&&h.wind<15&&h.gust<20)b.push('drone');
+  if(h.day&&dry&&h.wind<22)b.push('gravar');
+  if(h.day&&dry&&h.temp>=23&&h.wind<14&&h.cloud<75)b.push('praia');
+  if(h.day&&h.sea&&h.sea.p>=9&&h.sea.h>=0.5&&(h.wind<10||offshore(h)))b.push('surf');
+  return b}
+const BN={drone:'Bom pra drone',gravar:'Bom pra gravar externo',praia:'Bom pra praia',surf:'Bom pra surf'};
+function light(h){const lm=(h.low??h.cloud)+(h.mid??0);
+  return h.cloud<30?'luz dura':(h.cloud>=50&&lm<30)?'luz filtrada por nuvens altas':h.cloud<70?'luz mista':'luz suave'}
+function ranges(H,fn){const out=[];let a=null,p=null;
+  for(const h of H){if(fn(h)){if(a==null)a=h.hr;p=h.hr}else if(a!=null){out.push([a,p+1]);a=null}}
+  if(a!=null)out.push([a,p+1]);return out.map(([x,y])=>`${x}h–${y}h`).join(', ')}
+
+/* ---------- confiança ---------- */
+function confidence(H){
+  const names=[...new Set(H.flatMap(h=>h.per.map(p=>p.n)))];
+  if(names.length<2)return{lvl:1,label:'Só um modelo disponível',why:'Não deu pra comparar modelos pra este local.',rows:[]};
+  const D=H.filter(h=>h.day).length?H.filter(h=>h.day):H;
+  const rows=names.map(n=>({n,rain:sum(H.map(h=>(h.per.find(p=>p.n===n)||{}).rain||0)),wind:avg(D.map(h=>(h.per.find(p=>p.n===n)||{}).wind).filter(v=>v!=null))}));
+  const r=rows.map(x=>x.rain),w=rows.map(x=>x.wind),r0=Math.min(...r),r1=Math.max(...r),w0=Math.min(...w),w1=Math.max(...w);
+  let lvl=0;const why=[];
+  if(r1-r0>=8&&r1>=3*Math.max(r0,1)){lvl=2;why.push(`a chuva vai de ${nf(r0,r0<10?1:0)} a ${nf(r1)} mm conforme o modelo`)}
+  else if(r1-r0>=3&&r1>=2*Math.max(r0,0.5)){lvl=1;why.push(`a chuva varia de ${nf(r0,1)} a ${nf(r1,1)} mm entre os modelos`)}
+  if(w1-w0>=8){lvl=2;why.push(`o vento médio vai de ${kmh(w0)} a ${kmh(w1)} km/h conforme o modelo`)}
+  else if(w1-w0>=5){lvl=Math.max(lvl,1);why.push(`o vento varia de ${kmh(w0)} a ${kmh(w1)} km/h entre os modelos`)}
+  return{lvl,label:['Previsão confiável','Previsão razoável','Modelos divergem, pode mudar'][lvl],
+    why:lvl?'Motivo: '+why.join(' e ')+'.':`Os ${names.length} modelos concordam em chuva e vento.`,rows}}
+
+/* ---------- resumo em frases ---------- */
+const PER=[['madrugada','de madrugada',0,6],['manhã','de manhã',6,12],['tarde','à tarde',12,18],['noite','à noite',18,24]];
+const cap=s=>s[0].toUpperCase()+s.slice(1);
+function dayText(H){
+  const out=[],tot=sum(H.map(h=>h.rain)),D=H.filter(h=>h.day).length?H.filter(h=>h.day):H;
+  const per=PER.map(([n,prep,a,b])=>{const x=H.filter(h=>h.hr>=a&&h.hr<b);return{n,prep,mm:sum(x.map(h=>h.rain)),c:x.length}}).filter(p=>p.c);
+  if(tot<0.3){let s=cap(cloudWord(avg(D.map(h=>h.cloud))))+', sem chuva';
+    if(Math.max(...H.map(h=>h.rainMax))>=2)s+=' na média dos modelos, mas pelo menos um deles vê chuva';out.push(s+'.')}
+  else{const top=[...per].sort((a,b)=>b.mm-a.mm)[0],pk=H.reduce((a,b)=>b.rain>a.rain?b:a);let s;
+    if(top.mm>=2){s=cap(top.n)+' chuvosa';
+      if(pk.rain>=6){let i=H.indexOf(pk),a=i,b=i;while(a>0&&H[a-1].rain>=pk.rain*0.4)a--;while(b<H.length-1&&H[b+1].rain>=pk.rain*0.4)b++;
+        s+=`, com pancada forte entre ${H[a].hr}h e ${H[b].hr+1}h`}
+      else s+=`, uns ${nf(top.mm)} mm no período`}
+    else s=`${cap(rainWord(pk.rain))} ${top.prep}, pouca coisa (${nf(tot,1)} mm no total)`;
+    const ot=per.filter(p=>p!==top&&p.mm>=1).map(p=>p.prep);
+    out.push(s+'.'+(ot.length?` Também chove ${ot.join(' e ')}.`:''))}
+  const w=avg(D.map(h=>h.wind)),gx=Math.max(...D.map(h=>h.gust)),pkw=D.reduce((a,b)=>b.wind>a.wind?b:a);
+  if(w<2&&gx<8)out.push('Quase sem vento.');
+  else{let s=`${cap(wWord(w))} de ${dirName(circ(D.map(h=>h.dir)))}, ${kmh(w)} km/h (${kn0(w)} nós) com rajadas de ${kmh(gx)} km/h (${kn0(gx)} nós).`;
+    if(pkw.wind>=w+5)s+=` Mais forte por volta das ${pkw.hr}h, com ${kmh(pkw.wind)} km/h.`;out.push(s)}
+  const T=H.map(h=>h.temp).filter(v=>v!=null);
+  if(T.length)out.push(`Temperatura entre ${nf(Math.min(...T))}° e ${nf(Math.max(...T))}°.`);
+  const S=D.filter(h=>h.sea);
+  if(S.length){const sh=avg(S.map(h=>h.sea.h)),sp=avg(S.map(h=>h.sea.p));
+    out.push(`Mar com ondas de ${nf(sh,1)} m a cada ${nf(sp)} s, vindas de ${dirName(circ(S.map(h=>h.sea.dir)))}: ${seaWord(sh,sp)}.`)}
+  return out}
+function droneTip(M,when){
+  if(!M.length)return'';const okh=M.filter(h=>badges(h).includes('drone'));
+  if(okh.length===M.length)return avg(M.map(h=>h.wind))<6?`${when} quase sem vento: ótimo pra drone.`:`${when} bom pra drone o tempo todo.`;
+  if(okh.length)return`${when} dá pra voar drone ${ranges(M,h=>badges(h).includes('drone'))}.`;
+  return`${when} ruim pra drone: ${sum(M.map(h=>h.rain))>=0.5?'chuva':'vento forte'}.`}
+function summary(S,nowT){
+  const[today,tom]=S.dates;let H=S.hours.filter(h=>h.d===today&&h.t>=nowT),label='Hoje',next=tom;
+  if(H.length<3){H=S.hours.filter(h=>h.d===tom);label='Amanhã';next=null}
+  const lines=dayText(H);lines[0]=label+': '+lines[0][0].toLowerCase()+lines[0].slice(1);
+  if(next){const tip=droneTip(S.hours.filter(h=>h.d===next&&h.day&&h.hr<12),'Amanhã de manhã');if(tip)lines.push(tip)}
+  return{lines,conf:confidence(H)}}
+
+/* ---------- interface ---------- */
+const $=s=>document.querySelector(s);
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let S=null,loc=null,sel=0,favs=typeof localStorage==='undefined'?[]:store.get('tc_favs',[]);
+const same=(a,b)=>a&&b&&Math.abs(a.lat-b.lat)<0.005&&Math.abs(a.lon-b.lon)<0.005;
+const nowAt=off=>new Date(Date.now()+off*1000).toISOString().slice(0,13)+':00';
+const arrow=d=>`<svg class="arrow" viewBox="0 0 24 24" style="transform:rotate(${Math.round(d+180)}deg)" aria-hidden="true"><path d="M12 2l6 9h-4v11h-4V11H6z"/></svg>`;
+const dayLabel=(d,i)=>i===0?'Hoje':i===1?'Amanhã':cap(new Date(d+'T12:00').toLocaleDateString('pt-BR',{weekday:'short',day:'numeric'}).replace('.',''));
+
+function renderFavs(){
+  $('#favs').innerHTML=favs.map((f,i)=>`<button class="chip${same(f,loc)?' sel':''}" data-f="${i}">${esc(f.name)}</button>`).join('');
+  $('#fav').classList.toggle('on',favs.some(f=>same(f,loc)));
+  $('#fav').setAttribute('aria-label',favs.some(f=>same(f,loc))?'Tirar dos favoritos':'Salvar nos favoritos')}
+function renderSum(){
+  const{lines,conf}=summary(S,S.now);
+  const rows=conf.rows.map(r=>`<b>${esc(r.n)}</b><span class="num">${nf(r.rain,1)} mm de chuva</span><span class="num">vento ${kmh(r.wind)} km/h</span>`).join('');
+  $('#sum').innerHTML=`<div class="eyebrow">Resumo</div>${lines.map(l=>`<p>${esc(l)}</p>`).join('')}
+    <div style="margin-top:12px"><span class="pill c${conf.lvl}"><i></i>${conf.label}</span></div>
+    <details><summary class="more">Ver o que cada modelo diz</summary><p class="small muted" style="margin:8px 0 0">${esc(conf.why)}</p><div class="mtab">${rows}</div></details>`}
+function renderDay(){
+  const d=S.dates[sel],H=S.hours.filter(h=>h.d===d&&(sel>0||h.t>=S.now)),sn=S.sun[d],kv=[];
+  $('#tabs').innerHTML=S.dates.map((x,i)=>`<button class="tab${i===sel?' sel':''}" role="tab" aria-selected="${i===sel}" data-d="${i}">${dayLabel(x,i)}</button>`).join('');
+  if(sel>0)kv.push(['Resumo',dayText(H).join(' ')]);
+  if(sn)kv.push(['Sol',`nasce ${hm(sn.sr)}, se põe ${hm(sn.ss)}`],['Golden hour',`${hm(sn.sr)}–${hm(sn.sr+60)} e ${hm(sn.ss-60)}–${hm(sn.ss)}`]);
+  const td=S.tides.filter(t=>t.d===d);
+  if(td.length)kv.push(['Maré (estimativa)',td.map(t=>`${t.hi?'alta':'baixa'} ~${hm(t.m)}`).join(' · ')]);
+  for(const k in BN){const r=ranges(H,h=>badges(h).includes(k));kv.push([BN[k],r||'sem janela'])}
+  const c=sel>0?confidence(H):null;
+  $('#day').innerHTML=`<div class="eyebrow">${dayLabel(d,sel)}${c?` · <span class="c${c.lvl}">${c.label.toLowerCase()}</span>`:''}</div><dl class="kv">${kv.map(([a,b])=>`<dt>${a}</dt><dd>${esc(b)}</dd>`).join('')}</dl>`;
+  $('#hours').innerHTML=H.map(h=>{
+    const b=badges(h),lv=wLevel(h.wind),isNow=h.t===S.now;
+    const bd=b.map(k=>`<span class="b">${k==='gravar'?'Gravar externo · '+light(h):BN[k].replace('Bom pra ','').replace(/^./,c=>c.toUpperCase())}</span>`).join('')+(h.golden&&h.day?'<span class="b g">Golden hour</span>':'');
+    const rain=h.rain>=0.1?`<b>${cap(rainWord(h.rain))}</b> ${nf(h.rain,1)} mm`:(h.rainMax>=1?`Sem chuva (um modelo vê ${nf(h.rainMax,1)} mm)`:'Sem chuva');
+    const sea=h.sea?` · Mar ${nf(h.sea.h,1)} m / ${nf(h.sea.p)} s de ${dirName(h.sea.dir)}`:'';
+    const det=[`O vento vem de ${dirName(h.dir)} (${nf(h.dir)}°) e sopra pra ${dirName(h.dir+180)}. Média de ${kmh(h.wind)} km/h (${kn0(h.wind)} nós), rajadas até ${kmh(h.gust)} km/h (${kn0(h.gust)} nós): ${wWord(h.wind)}.`,
+      `Nuvens: ${cloudWord(h.cloud)} (${nf(h.cloud)}% do céu)${h.low!=null?`. Baixas ${nf(h.low)}%, médias ${nf(h.mid??0)}%, altas ${nf(h.high??0)}%`:''}. Umidade ${nf(h.hum??0)}%.`];
+    if(h.sea){const s=h.sea;det.push(`Mar: ondas de ${nf(s.h,1)} m a cada ${nf(s.p)} s, vindas de ${dirName(s.dir)}: ${seaWord(s.h,s.p)}.`+
+      (s.sh!=null?` Swell de ${nf(s.sh,1)} m / ${nf(s.sp??0)} s de ${dirName(s.sdir??0)}.`:'')+(s.wwh!=null?` Ondas de vento: ${nf(s.wwh,1)} m.`:'')+
+      (offshore(h)&&h.wind>=3?' Vento provavelmente terral.':'')+(s.sst!=null?` Água a ${nf(s.sst)}°.`:'')+(s.trend?` Maré ${s.trend} (estimativa).`:''))}
+    det.push('Por modelo: '+h.per.map(p=>`${p.n} ${kmh(p.wind)} km/h${p.rain?`, ${nf(p.rain,1)} mm`:''}`).join(' · ')+'.');
+    return`<details class="hr${h.day?'':' night'}${isNow?' now':''}"><summary>
+      <div class="hh num">${h.hr}h${isNow?'<small>agora</small>':''}</div>
+      <div class="wline"><span class="wchip w${lv} num"><b>${kmh(h.wind)}</b><span>km/h · ${kn0(h.wind)} nós · raj. ${kmh(h.gust)}</span></span>${arrow(h.dir)}<span class="small">vindo de ${dirName(h.dir)}</span></div>
+      <div class="tt num">${h.temp!=null?nf(h.temp)+'°':''}</div>
+      <div class="l2">${rain} · ${cap(cloudWord(h.cloud))}${h.day?'':' · noite'}${sea}</div>
+      ${bd?`<div class="bd">${bd}</div>`:''}</summary><div class="det">${det.map(p=>`<p>${esc(p)}</p>`).join('')}</div></details>`}).join('')||'<p class="muted small">Sem mais horas neste dia.</p>'}
+function show(msg){const a=$('#app');if(msg){a.hidden=true;a.style.display='none';$('#state').hidden=false;$('#state').innerHTML=msg}else{$('#state').hidden=true;a.hidden=false;a.style.display='flex'}}
+
+async function getJSON(u){const r=await fetch(u);if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}
+async function load(l){
+  loc=l;store.set('tc_last',l);sel=0;
+  $('#locname').textContent=l.name;$('#locsub').textContent=(l.sub?l.sub+' · ':'')+'toque pra trocar';
+  renderFavs();show('Carregando previsão…');
+  const q=`latitude=${l.lat}&longitude=${l.lon}&timezone=auto&forecast_days=5`;
+  const rs=await Promise.allSettled([...MODELS.map(([id])=>getJSON(`https://api.open-meteo.com/v1/forecast?${q}&hourly=${HV}&daily=sunrise,sunset&wind_speed_unit=kn&models=${id}`)),
+    getJSON(`https://marine-api.open-meteo.com/v1/marine?${q}&hourly=${MV}`)]);
+  if(loc!==l)return;
+  const models=MODELS.map(([,n],i)=>({n,d:rs[i].status==='fulfilled'?rs[i].value:null})).filter(m=>m.d&&m.d.hourly&&m.d.hourly.time&&m.d.hourly.wind_speed_10m.some(v=>v!=null));
+  if(!models.length){show('Não consegui buscar a previsão. Confira a internet e <button class="act" id="retry">tente de novo</button>.');return}
+  const marine=rs[MODELS.length].status==='fulfilled'?rs[MODELS.length].value:null;
+  S=build(models,marine);S.at=Date.now();S.now=nowAt(models[0].d.utc_offset_seconds||0);
+  if(S.hours.filter(h=>h.d===S.dates[0]&&h.t>=S.now).length===0&&S.dates.length>1)sel=1;
+  $('#upd').textContent=`Modelos: ${models.map(m=>m.n).join(', ')}${S.hours.some(h=>h.sea)?' + ondas':' (sem dados de mar aqui)'}. Atualizado ${new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})}.`;
+  renderSum();renderDay();show()}
+function locate(fallback){
+  if(!navigator.geolocation){fallback&&fallback();return}
+  show('Buscando sua localização…');
+  navigator.geolocation.getCurrentPosition(p=>load({name:'Minha localização',sub:`${nf(p.coords.latitude,3)}, ${nf(p.coords.longitude,3)}`,lat:+p.coords.latitude.toFixed(4),lon:+p.coords.longitude.toFixed(4)}),
+    ()=>{if(fallback)fallback();else show('Não tive permissão pra ver sua localização. Libere em Ajustes ou pesquise um local.')},{timeout:8000,maximumAge:600000})}
+
+function init(){
+  const th=store.get('tc_theme',null);if(th)document.documentElement.dataset.theme=th;
+  $('#theme').onclick=()=>{const dark=document.documentElement.dataset.theme?document.documentElement.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+    const t=dark?'light':'dark';document.documentElement.dataset.theme=t;store.set('tc_theme',t)};
+  $('#locbtn').onclick=()=>{const s=$('#search');s.classList.toggle('open');if(s.classList.contains('open'))$('#q').focus()};
+  $('#fav').onclick=()=>{if(!loc)return;const i=favs.findIndex(f=>same(f,loc));if(i>=0)favs.splice(i,1);else favs.push(loc);store.set('tc_favs',favs);renderFavs()};
+  $('#favs').onclick=e=>{const b=e.target.closest('[data-f]');if(b)load(favs[+b.dataset.f])};
+  $('#tabs').onclick=e=>{const b=e.target.closest('[data-d]');if(b){sel=+b.dataset.d;renderDay()}};
+  $('#state').onclick=e=>{if(e.target.id==='retry')load(loc)};
+  $('#geo').onclick=()=>{$('#search').classList.remove('open');locate()};
+  let tm,found=[];
+  $('#q').oninput=()=>{clearTimeout(tm);const v=$('#q').value.trim();if(v.length<2){$('#res').innerHTML='';return}
+    tm=setTimeout(async()=>{try{const j=await getJSON(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(v)}&count=8&language=pt&format=json`);
+      found=(j.results||[]).sort((a,b)=>(b.country_code==='BR')-(a.country_code==='BR'));
+      $('#res').innerHTML=found.length?found.map((r,i)=>`<button data-r="${i}"><b>${esc(r.name)}</b><br><span class="small muted">${esc([r.admin2,r.admin1,r.country].filter(x=>x&&x!==r.name).join(', '))}</span></button>`).join(''):'<p class="small muted">Nada encontrado. Tente o nome da cidade ou do bairro.</p>'}
+      catch(e){$('#res').innerHTML='<p class="small muted">A busca falhou. Confira a internet.</p>'}},350)};
+  $('#res').onclick=e=>{const b=e.target.closest('[data-r]');if(!b)return;const r=found[+b.dataset.r];
+    $('#search').classList.remove('open');$('#q').value='';$('#res').innerHTML='';
+    load({name:r.name,sub:[r.admin1,r.country].filter(Boolean).join(', '),lat:r.latitude,lon:r.longitude})};
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&loc&&S&&Date.now()-S.at>30*60000)load(loc)});
+  renderFavs();
+  locate(()=>load(store.get('tc_last',null)||DEF))}
+if(typeof document!=='undefined')init();else module.exports={build,summary,badges,confidence,dayText,ranges,light};
+</script>
+</body>
+</html>
